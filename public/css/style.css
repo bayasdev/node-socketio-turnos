@@ -1,0 +1,33 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #282828;
+    color: white;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.turno-actual-numero {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.turno-actual-modulo {
+    font-size: 45px;
+}
+
+.turno-secundario {
+    font-size: 25px;
+}
+
+
+/* Nuevo-turno */
+
+#lblNuevoTurno {
+    font-size: 70px;
+}

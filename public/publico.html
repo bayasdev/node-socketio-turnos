@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pantalla pública</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <div class="col-md-8 p-5">
+                <div>
+                    <a href="https://bayas.dev" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/logo.svg" alt="logo" height="60">
+                    </a>
+                </div>
+                <div class="d-flex flex-column justify-content-center text-center h-75">
+                    <div>
+                        <p id="lblTurno1" class="turno-actual-numero"></p>
+                        <p id="lblModulo1" class="turno-actual-modulo"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-5 bg-success d-flex flex-column justify-content-evenly text-center">
+                <div>
+                    <p id="lblTurno2" class="turno-secundario"></p>
+                    <p id="lblModulo2"></p>
+                </div>
+                <hr>
+                <div>
+                    <p id="lblTurno3" class="turno-secundario"></p>
+                    <p id="lblModulo3"></p>
+                </div>
+                <hr>
+                <div>
+                    <p id="lblTurno4" class="turno-secundario"></p>
+                    <p id="lblModulo4"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/publico.js"></script>
+
+</body>
+
+</html>
